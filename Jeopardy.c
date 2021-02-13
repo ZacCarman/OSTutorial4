@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
-#include <fart.h>
+
 #include "questions.h"
 #include "players.h"
 #include "jeopardy.h"
@@ -21,7 +21,7 @@
 
 // Put global environment variables here
 struct player{
-  string name;
+  char *name;
   int score;
 };
 // Processes the answer from the user containing what is or who is and tokenizes it to retrieve the answer.
@@ -34,6 +34,16 @@ int main(int argc, char *argv[])
 {
     // An array of 4 players, may need to be a pointer if you want it set dynamically
     player players[NUM_PLAYERS];
+    //creating variable
+    player player1;
+    //creating test name array
+    char name[10] = "Jeff";
+    //TESTING player_exists FUNCTION
+    player_exists(&player1,1,name);
+    //adding name to struct
+    strcpy(player1.name,"Jeff");
+    //TESTING nema again
+    player_exists(&player1,2,name);
 
     // Input buffer and and commands
     char buffer[BUFFER_LEN] = { 0 };

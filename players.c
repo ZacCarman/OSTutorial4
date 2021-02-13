@@ -12,10 +12,24 @@
 
 
 // Returns true if the player name matches one of the existing players
-bool player_exists(player *players, int num_players, char *name)
+bool player_exists( player *players, int num_players, char *name)
 {
-    
-    return false;
+
+    //loop for number of players
+    for (int i=0;i<num_players;i++){
+
+        //compare user entered name (name) to names in struct ((player+i)->name)
+        if (strcmp(name, ((players+i)->name))==0) {
+          //print if name is taken
+          printf("Name is taken\n" );
+          //return false if name is taken
+          return false;
+        }
+    }
+    //ELSE print name isn't taken
+    printf("Name isn't taken\n" );
+    //return true
+    return true;
 }
 
 // Go through the list of players and update the score for the
