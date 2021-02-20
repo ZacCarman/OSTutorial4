@@ -85,6 +85,9 @@ int main(int argc, char *argv[])
         // Execute the game until all questions are answered
 
         // Display the final results and exit
+
+        initialize_game();
+        
     }
     return EXIT_SUCCESS;
 }
