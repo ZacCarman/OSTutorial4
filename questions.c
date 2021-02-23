@@ -333,8 +333,6 @@ void display_categories(void)
     }
     if (is_empty == true)printf("There are no questions left\n");
  
-    
-
 }
 
 // Displays the question for the category and dollar value
