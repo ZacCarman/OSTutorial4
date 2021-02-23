@@ -343,11 +343,11 @@ void display_question(char *category, int value)
     int index = (value/100)-1;
 
     if (strcmp(category, "History")==0);
-    else if(strcmp(category, "2000's Kids Shows")==0)index += 5;
-    else if(strcmp(category, "General Knowledge")==0)index += 10;
+    else if(strcmp(category, "2000's")==0)index += 5;
+    else if(strcmp(category, "General")==0)index += 10;
     else if(strcmp(category, "Catchphrases")==0)index += 15;
-    else if(strcmp(category, "Childrens Books")==0)index += 20;
-    else if(strcmp(category, "General TV")==0)index += 25;
+    else if(strcmp(category, "Childrens")==0)index += 20;
+    else if(strcmp(category, "General2")==0)index += 25;
 
     printf("%s\n",qArr[index].question);
 
