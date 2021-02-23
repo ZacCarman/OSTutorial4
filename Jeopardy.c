@@ -117,7 +117,7 @@ int main(int argc, char *argv[])
         while (!(value >= 100 && value <= 500))
         {
         printf("Please enter a value.\n");
-        scanf(" %d",value);
+        scanf(" %d", &value);
 
         
         }
