@@ -10,7 +10,7 @@
 #include <string.h>
 #include "questions.h"
 
-char categories[6][500];
+//char categories[6][500];
 
 struct question
 {
@@ -21,12 +21,14 @@ struct question
     bool answered;
 };
 
+struct question qArr[30];
+
+
 // Initializes the array of questions for the game
 void initialize_game(void)
 {
     // initialize each question struct and assign it to the questions array
-    struct question qArr[30];
-
+   
     //Q1 Specification Category 1
     strcpy(qArr[0].category, "History");
     strcpy(qArr[0].question, "This person was the 16th president of the United States.");
@@ -250,23 +252,23 @@ void display_categories(void)
     printf("For history\n");
     for (int a = 0; a < 5; a++)
     {
-        if(qArr[i].answered == false){
+        if(qArr[a].answered == false){
             is_empty = false;
-            printf("Question for $%d is still available\n", qArr[i].value);
+            printf("Question for $%d is still available\n", qArr[a].value);
 
         }
     }
     if (is_empty == true)printf("There are no questions left\n");
 
     //2000's Kids Shows
-    bool is_empty = true;
+    is_empty = true;
 
     printf("For 2000's Kids Shows\n");
-    for (int a = 5; a < 10; a++)
+    for (int b = 5; b < 10; b++)
     {
-        if(qArr[i].answered == false){
+        if(qArr[b].answered == false){
             is_empty = false;
-            printf("Question for $%d is still available\n", qArr[i].value);
+            printf("Question for $%d is still available\n", qArr[b].value);
 
         }
     }
@@ -274,14 +276,14 @@ void display_categories(void)
 
 
     // General Knowledge
-    bool is_empty = true;
+    is_empty = true;
 
     printf("For General Knowledge\n");
-    for (int a = 10; a < 15; a++)
+    for (int c = 10; c < 15; c++)
     {
-        if(qArr[i].answered == false){
+        if(qArr[c].answered == false){
             is_empty = false;
-            printf("Question for $%d is still available\n", qArr[i].value);
+            printf("Question for $%d is still available\n", qArr[c].value);
 
         }
     }
@@ -289,14 +291,14 @@ void display_categories(void)
 
 
     // Catchphrases
-    bool is_empty = true;
+    is_empty = true;
 
     printf("For Catchphrases\n");
-    for (int a = 15; a < 20; a++)
+    for (int d = 15; d < 20; d++)
     {
-        if(qArr[i].answered == false){
+        if(qArr[d].answered == false){
             is_empty = false;
-            printf("Question for $%d is still available\n", qArr[i].value);
+            printf("Question for $%d is still available\n", qArr[d].value);
 
         }
     }
@@ -304,28 +306,28 @@ void display_categories(void)
 
 
     // Childrens Books
-    bool is_empty = true;
+    is_empty = true;
 
     printf("For Childrens Books\n");
-    for (int a = 20; a < 25; a++)
+    for (int e = 20; e < 25; e++)
     {
-        if(qArr[i].answered == false){
+        if(qArr[e].answered == false){
             is_empty = false;
-            printf("Question for $%d is still available\n", qArr[i].value);
+            printf("Question for $%d is still available\n", qArr[e].value);
 
         }
     }
     if (is_empty == true)printf("There are no questions left\n");
 
     // General TV
-    bool is_empty = true;
+    is_empty = true;
 
     printf("For General TV\n");
-    for (int a = 25; a < 30; a++)
+    for (int f = 25; f < 30; f++)
     {
-        if(qArr[i].answered == false){
+        if(qArr[f].answered == false){
             is_empty = false;
-            printf("Question for $%d is still available\n", qArr[i].value);
+            printf("Question for $%d is still available\n", qArr[f].value);
 
         }
     }
@@ -340,12 +342,12 @@ void display_question(char *category, int value)
 {
     int index = (value/100)-1;
 
-    if (category == strcmp(category, "History")==0);
-    else if(category == strcmp(category, "2000's Kids Shows")==0)index += 5;
-    else if(category == strcmp(category, "General Knowledge")==0)index += 10;
-    else if(category == strcmp(category, "Catchphrases")==0)index += 15;
-    else if(category == strcmp(category, "Childrens Books")==0)index += 20;
-    else if(category == strcmp(category, "General TV")==0)index += 25;
+    if (strcmp(category, "History")==0);
+    else if(strcmp(category, "2000's Kids Shows")==0)index += 5;
+    else if(strcmp(category, "General Knowledge")==0)index += 10;
+    else if(strcmp(category, "Catchphrases")==0)index += 15;
+    else if(strcmp(category, "Childrens Books")==0)index += 20;
+    else if(strcmp(category, "General TV")==0)index += 25;
 
     printf("%s\n",qArr[index].question);
 
