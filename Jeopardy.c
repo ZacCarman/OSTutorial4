@@ -87,7 +87,23 @@ int main(int argc, char *argv[])
         // Display the final results and exit
 
         initialize_game();
+
+        //displays all available questions in each category 
+        display_categories();
+
+        //ask the user to choose a category and value to display the question in that slot
+        char category[100];
+        printf("Please enter a category.\n");
+        gets(category);
+
+        int value;
+        printf("Please enter a category.\n");
+        scanf("%d",value);
+
+        display_question(category, value);
         
+
+
     }
     return EXIT_SUCCESS;
 }
