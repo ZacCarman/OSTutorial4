@@ -92,15 +92,31 @@ int main(int argc, char *argv[])
         display_categories();
 
         //ask the user to choose a category and value to display the question in that slot
+
+        //input a category, if it does not exist they are pompted again until it does
         char category[100];
+        while (strcmp(category,"History") != 0 || strcmp(category,"2000's Kids Shows") != 0 || strcmp(category,"General Knowledge") != 0 || strcmp(category,"Catchphrases") != 0 || strcmp(category,"Childrens Books") != 0 || strcmp(category,"General TV") != 0)
+        {
+       
         printf("Please enter a category.\n");
         gets(category);
 
+        }
+        
+
+        //looking for a value between 100 and 500 if it is not of 100 it will be floored in the function if it does not fit the criteria the promp is repeated until valid input
         int value;
+        while (!(value >= 100 && value <= 500))
+        {
         printf("Please enter a category.\n");
         scanf("%d",value);
 
+        
+        }
+
         display_question(category, value);
+        
+
         
 
 
