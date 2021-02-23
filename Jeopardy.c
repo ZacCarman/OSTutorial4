@@ -96,7 +96,7 @@ int main(int argc, char *argv[])
         //input a category, if it does not exist they are pompted again until it does
         char category[100];
         bool loop = true;
-        while (loop)
+        while (loop == true)
         {
        
         printf("Please enter a category.\n");
