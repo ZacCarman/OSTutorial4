@@ -242,12 +242,112 @@ void initialize_game(void)
 // Displays each of the remaining categories and question dollar values that have not been answered
 void display_categories(void)
 {
-    // print categories and dollar values for each unanswered question in questions array
+    // Since there is no get category function the output is static for categories
+    
+    // history
+    bool is_empty = true;
+
+    printf("For history\n");
+    for (int a = 0; a < 5; a++)
+    {
+        if((qArr[i].answered == false){
+            is_empty = false;
+            printf("Question for $%d is still available\n", qArr[i].value);
+
+        }
+    }
+    if (is_empty == true)printf("There are no questions left\n");
+
+    //2000's Kids Shows
+    bool is_empty = true;
+
+    printf("For 2000's Kids Shows\n");
+    for (int a = 5; a < 10; a++)
+    {
+        if((qArr[i].answered == false){
+            is_empty = false;
+            printf("Question for $%d is still available\n", qArr[i].value);
+
+        }
+    }
+    if (is_empty == true)printf("There are no questions left\n");
+
+
+    // General Knowledge
+    bool is_empty = true;
+
+    printf("For General Knowledge\n");
+    for (int a = 10; a < 15; a++)
+    {
+        if((qArr[i].answered == false){
+            is_empty = false;
+            printf("Question for $%d is still available\n", qArr[i].value);
+
+        }
+    }
+    if (is_empty == true)printf("There are no questions left\n");
+
+
+    // Catchphrases
+    bool is_empty = true;
+
+    printf("For Catchphrases\n");
+    for (int a = 15; a < 20; a++)
+    {
+        if((qArr[i].answered == false){
+            is_empty = false;
+            printf("Question for $%d is still available\n", qArr[i].value);
+
+        }
+    }
+    if (is_empty == true)printf("There are no questions left\n");
+
+
+    // Childrens Books
+    bool is_empty = true;
+
+    printf("For Childrens Books\n");
+    for (int a = 20; a < 25; a++)
+    {
+        if((qArr[i].answered == false){
+            is_empty = false;
+            printf("Question for $%d is still available\n", qArr[i].value);
+
+        }
+    }
+    if (is_empty == true)printf("There are no questions left\n");
+
+    // General TV
+    bool is_empty = true;
+
+    printf("For General TV\n");
+    for (int a = 25; a < 30; a++)
+    {
+        if((qArr[i].answered == false){
+            is_empty = false;
+            printf("Question for $%d is still available\n", qArr[i].value);
+
+        }
+    }
+    if (is_empty == true)printf("There are no questions left\n");
+ 
+    
+
 }
 
 // Displays the question for the category and dollar value
 void display_question(char *category, int value)
 {
+    int index = (value/100)-1;
+
+    if (category == strcmp(category, "History")==0);
+    else if(category == strcmp(category, "2000's Kids Shows")==0)index += 5;
+    else if(category == strcmp(category, "General Knowledge")==0)index += 10;
+    else if(category == strcmp(category, "Catchphrases")==0)index += 15;
+    else if(category == strcmp(category, "Childrens Books")==0)index += 20;
+    else if(category == strcmp(category, "General TV")==0)index += 25;
+
+    printf("%s\n",qArr[index].question);
 
 }
 
