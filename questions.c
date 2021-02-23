@@ -250,7 +250,7 @@ void display_categories(void)
     printf("For history\n");
     for (int a = 0; a < 5; a++)
     {
-        if((qArr[i].answered == false){
+        if(qArr[i].answered == false){
             is_empty = false;
             printf("Question for $%d is still available\n", qArr[i].value);
 
@@ -264,7 +264,7 @@ void display_categories(void)
     printf("For 2000's Kids Shows\n");
     for (int a = 5; a < 10; a++)
     {
-        if((qArr[i].answered == false){
+        if(qArr[i].answered == false){
             is_empty = false;
             printf("Question for $%d is still available\n", qArr[i].value);
 
@@ -279,7 +279,7 @@ void display_categories(void)
     printf("For General Knowledge\n");
     for (int a = 10; a < 15; a++)
     {
-        if((qArr[i].answered == false){
+        if(qArr[i].answered == false){
             is_empty = false;
             printf("Question for $%d is still available\n", qArr[i].value);
 
@@ -294,7 +294,7 @@ void display_categories(void)
     printf("For Catchphrases\n");
     for (int a = 15; a < 20; a++)
     {
-        if((qArr[i].answered == false){
+        if(qArr[i].answered == false){
             is_empty = false;
             printf("Question for $%d is still available\n", qArr[i].value);
 
@@ -309,7 +309,7 @@ void display_categories(void)
     printf("For Childrens Books\n");
     for (int a = 20; a < 25; a++)
     {
-        if((qArr[i].answered == false){
+        if(qArr[i].answered == false){
             is_empty = false;
             printf("Question for $%d is still available\n", qArr[i].value);
 
@@ -323,7 +323,7 @@ void display_categories(void)
     printf("For General TV\n");
     for (int a = 25; a < 30; a++)
     {
-        if((qArr[i].answered == false){
+        if(qArr[i].answered == false){
             is_empty = false;
             printf("Question for $%d is still available\n", qArr[i].value);
 
