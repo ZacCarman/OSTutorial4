@@ -95,11 +95,19 @@ int main(int argc, char *argv[])
 
         //input a category, if it does not exist they are pompted again until it does
         char category[100];
-        while (strcmp(category,"History") != 0 || strcmp(category,"2000's Kids Shows") != 0 || strcmp(category,"General Knowledge") != 0 || strcmp(category,"Catchphrases") != 0 || strcmp(category,"Childrens Books") != 0 || strcmp(category,"General TV") != 0)
+        bool loop = true;
+        while (loop)
         {
        
         printf("Please enter a category.\n");
-        gets(category);
+        scanf(" %s",category);
+
+        if(strcmp(category,"History") == 0)loop = false;
+        else if(strcmp(category,"2000's") == 0)loop = false;
+        else if(strcmp(category,"General") == 0)loop = false;
+        else if(strcmp(category,"Catchphrases") == 0)loop = false;
+        else if(strcmp(category,"Childrens") == 0)loop = false;
+        else if(strcmp(category,"General2") == 0)loop = false;
 
         }
         
@@ -109,7 +117,7 @@ int main(int argc, char *argv[])
         while (!(value >= 100 && value <= 500))
         {
         printf("Please enter a category.\n");
-        scanf("%d",value);
+        scanf(" %d",value);
 
         
         }
