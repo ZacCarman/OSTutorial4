@@ -10,17 +10,20 @@
 
 #include <stdbool.h>
 
-#define MAX_LEN 256
-#define NUM_CATEGORIES 3
+#define MAX_LEN 500
+#define NUM_CATEGORIES 6
 // The number of questions, you can use this in your functions in
 // questions.c, this can be accessed in questions.c
-#define NUM_QUESTIONS 12
+#define NUM_QUESTIONS 30
 
 // List of 3 categories as array of strings
 static char categories[NUM_CATEGORIES][MAX_LEN] = {
-    "programming", 
-    "algorithms", 
-    "databases"
+    "History", 
+    "2000's Kids Shows", 
+    "General Knowledge",
+    "Catchphrases",
+    "Childrens Books",
+    "General TV"
 };
 
 // Questions struct for each question
