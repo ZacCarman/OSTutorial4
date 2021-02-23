@@ -10,7 +10,7 @@
 
 #include <stdbool.h>
 
-#define MAX_LEN 256
+#define MAX_LEN 500
 
 // Player struct for each player
 typedef struct {
