@@ -31,211 +31,211 @@ void initialize_game(void)
     strcpy(qArr[0].category, "History");
     strcpy(qArr[0].question, "This person was the 16th president of the United States.");
     strcpy(qArr[0].answer, "Who is Abraham Lincoln");
-    strcpy(qArr[0].value, 100);
-    strcpy(qArr[0].answered,  false);
+    qArr[0].value = 100;
+    qArr[0].answered = false;
 
     //Q2 Specification Category 1
     strcpy(qArr[1].category, "History");
     strcpy(qArr[1].question, "This is the name of the youngest Pharoh of Egypt");
     strcpy(qArr[1].answer, "Who is King Tut");
-    strcpy(qArr[1].value, 200);
-    strcpy(qArr[1].answered,  false);
+    qArr[1].value = 200;
+    qArr[1].answered = false;
 
     //Q3 Specification Category 1
     strcpy(qArr[2].category, "History");
     strcpy(qArr[2].question, "This is the name of the most famous structure in the Acropolis.");
     strcpy(qArr[2].answer, "What is the Parthenon");
-    strcpy(qArr[2].value, 300);
-    strcpy(qArr[2].answered,  false);
+    qArr[2].value = 300;
+    qArr[2].answered = false;
 
     //Q4 Specification Category 1
     strcpy(qArr[3].category, "History");
     strcpy(qArr[3].question, "This is the year the war of 1812 began.");     
     strcpy(qArr[3].answer, "When is 1812");
-    strcpy(qArr[3].value, 400);
-    strcpy(qArr[3].answered,  false);
+    qArr[3].value = 400;
+    qArr[3].answered = false;
 
     //Q5 Specification Category 1
     strcpy(qArr[4].category, "History");
     strcpy(qArr[4].question, "The ancient world had 2 important cities named Thebes: one in Greece & one in this land.");
     strcpy(qArr[4].answer, "What is Egypt");
-    strcpy(qArr[4].value, 500);
-    strcpy(qArr[4].answered,  false);
+    qArr[4].value = 500;
+    qArr[4].answered = false;
 
     //Q1 Specification Category 2
     strcpy(qArr[5].category, "2000's Kids Shows");
     strcpy(qArr[5].question, "He lives in a pineapple under the sea.");
     strcpy(qArr[5].answer, "Who is Sponge Bob");
-    strcpy(qArr[5].value, 100);
-    strcpy(qArr[5].answered,  false);
+    qArr[5].value = 100;
+    qArr[5].answered = false;
 
     //Q2 Specification Category 2
     strcpy(qArr[6].category, "2000's Kids Shows");
     strcpy(qArr[6].question, "Ally Dawson was the main character in this Disney Channel tv show.");
     strcpy(qArr[6].answer, "Austin and Ally");
-    strcpy(qArr[6].value, 200);
-    strcpy(qArr[6].answered,  false);
+    qArr[6].value = 200;
+    qArr[6].answered = false;
 
     //Q3 Specification Category 2
     strcpy(qArr[7].category, "2000's Kids Shows");
     strcpy(qArr[7].question, "The show Jonas featured this popular band of brothers.");
     strcpy(qArr[7].answer, "Who are the Jonas Brothers");
-    strcpy(qArr[7].value, 300);
-    strcpy(qArr[7].answered,  false);
+    qArr[7].value = 300;
+    qArr[7].answered = false;
 
     //Q4 Specification Category 2
     strcpy(qArr[8].category, "2000's Kids Shows");
     strcpy(qArr[8].question, "Disney's Recess is about what part of a middle school day.");
     strcpy(qArr[8].answer, "When is Recess");
-    strcpy(qArr[8].value, 400);
-    strcpy(qArr[8].answered,  false);
+    qArr[8].value = 400;
+    qArr[8].answered = false;
 
     //Q5 Specification Category 2
     strcpy(qArr[9].category, "2000's Kids Shows");
     strcpy(qArr[9].question, "This was the name of the web series filmed in the show iCarly.");
     strcpy(qArr[9].answer, "What is iCarly");
-    strcpy(qArr[9].value, 500);
-    strcpy(qArr[9].answered,  false);
+    qArr[9].value = 500;
+    qArr[9].answered = false;
 
     //Q1 Specification Category 3
     strcpy(qArr[10].category, "General Knowledge");
     strcpy(qArr[10].question, "This animal is famous for looking part beaver and part duck.");
     strcpy(qArr[10].answer, "What is a platypus");
-    strcpy(qArr[10].value, 100);
-    strcpy(qArr[10].answered,  false);
+    qArr[10].value = 100;
+    qArr[10].answered = false;
 
     //Q2 Specification Category 3
     strcpy(qArr[11].category, "General Knowledge");
     strcpy(qArr[11].question, "When three people enter a bathroom with 5 urinals labled 1-5 respectively, the three men stand at these 3 urinals.");
     strcpy(qArr[11].answer, "What is 1, 3, 5");
-    strcpy(qArr[11].value, 200);
-    strcpy(qArr[11].answered,  false);
+    qArr[11].value = 200;
+    qArr[11].answered = false;
 
     //Q3 Specification Category 3
     strcpy(qArr[12].category, "General Knowledge");
     strcpy(qArr[12].question, "This is the video platform owned by Google home to many of the popular creators.");
     strcpy(qArr[12].answer, "What is youtube");
-    strcpy(qArr[12].value, 300);
-    strcpy(qArr[12].answered,  false);
+    qArr[12].value = 300;
+    qArr[12].answered = false;
 
     //Q4 Specification Category 3
     strcpy(qArr[13].category, "General Knowledge");
     strcpy(qArr[13].question, "This is the number of countries located in Africa.");
     strcpy(qArr[13].answer, "What is 54");
-    strcpy(qArr[13].value, 400);
-    strcpy(qArr[13].answered,  false);
+    qArr[13].value = 400;
+    qArr[13].answered = false;
 
     //Q5 Specification Category 3
     strcpy(qArr[14].category, "General Knowledge");
     strcpy(qArr[14].question, "This is the name of the band that sang the song Bycicle Race.");
     strcpy(qArr[14].answer, "Who is Queen");
-    strcpy(qArr[14].value, 500);
-    strcpy(qArr[14].answered,  false);
+    qArr[14].value = 500;
+    qArr[14].answered = false;
 
     //Q1 Specification Category 4
     strcpy(qArr[15].category, "Catchphrases");
     strcpy(qArr[15].question, "What's up Doc! is a phrase said by this cartoon character.");
     strcpy(qArr[15].answer, "Who is Bugs Bunny");
-    strcpy(qArr[15].value, 100);
-    strcpy(qArr[15].answered,  false);
+    qArr[15].value = 100;
+    qArr[15].answered = false;
 
     //Q2 Specification Category 4
     strcpy(qArr[16].category, "Catchphrases");
     strcpy(qArr[16].question, "Avengers assemble is a phrase used in this movie.");
     strcpy(qArr[16].answer, "What is Avengers.");
-    strcpy(qArr[16].value, 200);
-    strcpy(qArr[16].answered,  false);
+    qArr[16].value = 200;
+    qArr[16].answered = false;
 
     //Q3 Specification Category 4
     strcpy(qArr[17].category, "Catchphrases");
     strcpy(qArr[17].question, "D'oh is said by this character.");
     strcpy(qArr[17].answer, "Homer Simpson");
-    strcpy(qArr[17].value, 300);
-    strcpy(qArr[17].answered,  false);
+    qArr[17].value = 300;
+    qArr[17].answered = false;
 
     //Q4 Specification Category 4
     strcpy(qArr[18].category, "Catchphrases");
     strcpy(qArr[18].question, "Eat my shorts is said by this character.");
     strcpy(qArr[18].answer, "Bart Simpson");
-    strcpy(qArr[18].value, 400);
-    strcpy(qArr[18].answered,  false);
+    qArr[18].value = 400;
+    qArr[18].answered = false;
 
     //Q5 Specification Category 4
     strcpy(qArr[19].category, "Catchphrases");
     strcpy(qArr[19].question, "Come on down! is used in this popular gameshow.");
     strcpy(qArr[19].answer, "What is the price is right");
-    strcpy(qArr[19].value, 500);
-    strcpy(qArr[19].answered,  false);
+    qArr[19].value = 500;
+    qArr[19].answered = false;
 
     //Q1 Specification Category 5
     strcpy(qArr[20].category, "Childrens Books");
     strcpy(qArr[20].question, "The Lorax is a character in this popular childrens book.");
     strcpy(qArr[20].answer, "Who is the Lorax");
-    strcpy(qArr[20].value, 100);
-    strcpy(qArr[20].answered,  false);
+    qArr[20].value = 100;
+    qArr[20].answered = false;
 
     //Q2 Specification Category 5
     strcpy(qArr[21].category, "Childrens Books");
     strcpy(qArr[21].question, "This is the name of the author of Green Eggs and Ham.");
     strcpy(qArr[21].answer, "Dr. Seuss");
-    strcpy(qArr[21].value, 200);
-    strcpy(qArr[21].answered,  false);
+    qArr[21].value = 200;
+    qArr[21].answered = false;
 
     //Q3 Specification Category 5
     strcpy(qArr[22].category, "Childrens Books");
     strcpy(qArr[22].question, "This is the name of the book about a dirary of a whimpy kid.");
     strcpy(qArr[22].answer, "What is the diary of a whimpy kid");
-    strcpy(qArr[22].value, 300);
-    strcpy(qArr[22].answered,  false);
+    qArr[22].value = 300;
+    qArr[22].answered = false;
 
     //Q4 Specification Category 5
     strcpy(qArr[23].category, "Childrens Books");
     strcpy(qArr[23].question, "Green eggs go best with this food item according to Sam I Am.");
     strcpy(qArr[23].answer, "What is ham");
-    strcpy(qArr[23].value, 400);
-    strcpy(qArr[23].answered,  false);
+    qArr[23].value = 400;
+    qArr[23].answered = false;
 
     //Q5 Specification Category 5
     strcpy(qArr[24].category, "Childrens Books");
     strcpy(qArr[24].question, "This book is about a cat that enjoys his big hat.");
     strcpy(qArr[24].answer, "What is the cat in the hat");
-    strcpy(qArr[24].value, 500);
-    strcpy(qArr[24].answered,  false);
+    qArr[24].value = 500;
+    qArr[24].answered = false;
 
     //Q1 Specification Category 6
     strcpy(qArr[25].category, "General TV");
     strcpy(qArr[25].question, "Porky Pig is a character in this tv show.");
     strcpy(qArr[25].answer, "What is Looney Tunes");
-    strcpy(qArr[25].value, 100);
-    strcpy(qArr[25].answered,  false);
+    qArr[25].value = 100;
+    qArr[25].answered = false;
 
     //Q2 Specification Category 6
     strcpy(qArr[26].category, "General TV");
     strcpy(qArr[26].question, "Jim Parsons played this character on Big Bang Theory");
     strcpy(qArr[26].answer, "Who is Sheldon Cooper");
-    strcpy(qArr[26].value, 200);
-    strcpy(qArr[26].answered,  false);
+    qArr[26].value = 200;
+    qArr[26].answered = false;
 
     //Q3 Specification Category 6
     strcpy(qArr[27].category, "General TV");
     strcpy(qArr[27].question, "Wolverine was a part of this group");
     strcpy(qArr[27].answer, "Who are the X-men");
-    strcpy(qArr[27].value, 300);
-    strcpy(qArr[27].answered,  false);
+    qArr[27].value = 300;
+    qArr[27].answered = false;
 
     //Q4 Specification Category 6
     strcpy(qArr[28].category, "General TV");
     strcpy(qArr[28].question, "This is the female lead in the popular show New Girl");
     strcpy(qArr[28].answer, "Who is Zooey Deschanel");
-    strcpy(qArr[28].value, 400);
-    strcpy(qArr[28].answered,  false);
+    qArr[28].value = 400;
+    qArr[28].answered = false;
 
     //Q5 Specification Category 6
     strcpy(qArr[29].category, "General TV");
     strcpy(qArr[29].question, "Heisenberg is the alias used by a character in this popular tv show.");
     strcpy(qArr[29].answer, "What is breaking bad");
-    strcpy(qArr[29].value, 500);
-    strcpy(qArr[29].answered,  false);
+    qArr[29].value = 500;
+    qArr[29].answered = false;
 
 }
 
