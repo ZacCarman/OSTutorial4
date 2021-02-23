@@ -353,25 +353,40 @@ void display_question(char *category, int value)
 
 }
 
-/*// Returns true if the answer is correct for the question for that category and dollar value
+
+// Returns true if the answer is correct for the question for that category and dollar value
 bool valid_answer(char *category, int value, char *answer)
 {
-    int i = (value/100) - 1;
-    int index = 0;
-
-    if (strcmp(category, "2000's Kids Shows") == 0) { 
-        if ( i == 0 ) {
-            strcmp(qArr[index].answer,);
-        } 
+    for (int i = 0; i < 30; i++) {
+        if (strcmp(qArr[i].category, category) == 0) {
+            if (strcmp(qArr[i].answer, answer) == 0) {
+                qArr[i].answered = true;
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
     }
-
-    // Look into string comparison functions
-    return false;
-}*/
+}
 
 // Returns true if the question has already been answered
 bool already_answered(char *category, int value)
 {
-    // lookup the question and see if it's already been marked as answered
-    return false;
+    for (int i = 0; i < 30; i++) {
+        if (strcmp(qArr[i].category, category) == 0) {
+            if (qArr[i].value == value) {
+                if (qArr[i].answered == true) {
+                    return true;
+                } else {
+                    return false;
+                }
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
+    }
 }
