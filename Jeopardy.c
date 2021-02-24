@@ -32,9 +32,6 @@ int main(int argc, char *argv[])
     // An array of 4 players, may need to be a pointer if you want it set dynamically
     player players[NUM_PLAYERS];
 
-
-
-
     // Input buffer and and commands
     char buffer[BUFFER_LEN] = { 0 };
 
@@ -72,11 +69,6 @@ int main(int argc, char *argv[])
       players[x].score=0;
     }
   
-
-
-
-
-
     // Perform an infinite loop getting command input from users until game ends
     while (fgets(buffer, BUFFER_LEN, stdin) != NULL)
     {
@@ -98,7 +90,6 @@ int main(int argc, char *argv[])
         bool loop = true;
         while (loop == true)
         {
-       
         printf("Please enter a category.\n");
         scanf(" %s",category);
 
@@ -108,26 +99,18 @@ int main(int argc, char *argv[])
         else if(strcmp(category,"Catchphrases") == 0)loop = false;
         else if(strcmp(category,"Childrens") == 0)loop = false;
         else if(strcmp(category,"General2") == 0)loop = false;
-
         }
-        
 
         //looking for a value between 100 and 500 if it is not of 100 it will be floored in the function if it does not fit the criteria the promp is repeated until valid input
         int value;
         while (!(value >= 100 && value <= 500))
         {
         printf("Please enter a value.\n");
-        scanf(" %d", &value);
-
-        
+        scanf(" %d", &value);        
         }
 
         display_question(category, value);
-        
-
-        
-
-
     }
+
     return EXIT_SUCCESS;
 }
