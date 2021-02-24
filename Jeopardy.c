@@ -72,44 +72,39 @@ int main(int argc, char *argv[])
     // Perform an infinite loop getting command input from users until game ends
     while (fgets(buffer, BUFFER_LEN, stdin) != NULL)
     {
-        // Call functions from the questions and players source files
 
-        // Execute the game until all questions are answered
+      bool loop = true;
+      bool categoryBool = true;
+      bool questionBool = false;
+      //input a category, if it does not exist they are pompted again until it does
+      char category[100];
+      char answer[100];
 
-        // Display the final results and exit
+      initialize_game();
 
-        initialize_game();
-
+      if (categoryBool == true) {
         //displays all available questions in each category 
         display_categories();
+        categoryBool = false;
+      }
 
-        //ask the user to choose a category and value to display the question in that slot
+      //ask the user to choose a category and value to display the question in that slot
+      printf("\nPlease enter a category.\n");
+      scanf(" %s",category);
 
-        //input a category, if it does not exist they are pompted again until it does
-        char category[100];
-        bool loop = true;
-        while (loop == true)
-        {
-        printf("Please enter a category.\n");
-        scanf(" %s",category);
+      //looking for a value between 100 and 500 if it is not of 100 it will be floored in the function if it does not fit the criteria the promp is repeated until valid input
+      int value;
+      while (!(value >= 100 && value <= 500))
+      {
+      printf("Please enter a value.\n");
+      scanf(" %d", &value);        
+      }
 
-        if(strcmp(category,"History") == 0)loop = false;
-        else if(strcmp(category,"2000's") == 0)loop = false;
-        else if(strcmp(category,"General") == 0)loop = false;
-        else if(strcmp(category,"Catchphrases") == 0)loop = false;
-        else if(strcmp(category,"Childrens") == 0)loop = false;
-        else if(strcmp(category,"General2") == 0)loop = false;
-        }
+      display_question(category, value);
+      printf("\nPlease enter your response.\n");
+      scanf(" %s", answer);
 
-        //looking for a value between 100 and 500 if it is not of 100 it will be floored in the function if it does not fit the criteria the promp is repeated until valid input
-        int value;
-        while (!(value >= 100 && value <= 500))
-        {
-        printf("Please enter a value.\n");
-        scanf(" %d", &value);        
-        }
 
-        display_question(category, value);
     }
 
     return EXIT_SUCCESS;

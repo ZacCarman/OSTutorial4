@@ -249,7 +249,7 @@ void display_categories(void)
     // history
     bool is_empty = true;
 
-    printf("For history\n");
+    printf("\nFor history\n");
     for (int a = 0; a < 5; a++)
     {
         if(qArr[a].answered == false){
@@ -258,12 +258,12 @@ void display_categories(void)
 
         }
     }
-    if (is_empty == true)printf("There are no questions left\n");
+    if (is_empty == true)printf("\nThere are no questions left\n");
 
     //2000's Kids Shows
     is_empty = true;
 
-    printf("For 2000's Kids Shows\n");
+    printf("\nFor 2000's Kids Shows\n");
     for (int b = 5; b < 10; b++)
     {
         if(qArr[b].answered == false){
@@ -272,13 +272,13 @@ void display_categories(void)
 
         }
     }
-    if (is_empty == true)printf("There are no questions left\n");
+    if (is_empty == true)printf("\nThere are no questions left\n");
 
 
     // General Knowledge
     is_empty = true;
 
-    printf("For General Knowledge\n");
+    printf("\nFor General Knowledge\n");
     for (int c = 10; c < 15; c++)
     {
         if(qArr[c].answered == false){
@@ -287,13 +287,13 @@ void display_categories(void)
 
         }
     }
-    if (is_empty == true)printf("There are no questions left\n");
+    if (is_empty == true)printf("\nThere are no questions left\n");
 
 
     // Catchphrases
     is_empty = true;
 
-    printf("For Catchphrases\n");
+    printf("\nFor Catchphrases\n");
     for (int d = 15; d < 20; d++)
     {
         if(qArr[d].answered == false){
@@ -302,13 +302,13 @@ void display_categories(void)
 
         }
     }
-    if (is_empty == true)printf("There are no questions left\n");
+    if (is_empty == true)printf("\nThere are no questions left\n");
 
 
     // Childrens Books
     is_empty = true;
 
-    printf("For Childrens Books\n");
+    printf("\nFor Childrens Books\n");
     for (int e = 20; e < 25; e++)
     {
         if(qArr[e].answered == false){
@@ -317,12 +317,12 @@ void display_categories(void)
 
         }
     }
-    if (is_empty == true)printf("There are no questions left\n");
+    if (is_empty == true)printf("\nThere are no questions left\n");
 
     // General TV
     is_empty = true;
 
-    printf("For General TV\n");
+    printf("\nFor General TV\n");
     for (int f = 25; f < 30; f++)
     {
         if(qArr[f].answered == false){
@@ -331,7 +331,7 @@ void display_categories(void)
 
         }
     }
-    if (is_empty == true)printf("There are no questions left\n");
+    if (is_empty == true)printf("\nThere are no questions left\n");
  
 }
 
