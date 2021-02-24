@@ -68,14 +68,14 @@ int main(int argc, char *argv[])
     for(int x=0; x<CountedP;x++){
       players[x].score=0;
     }
+
+    bool loop = true;
+    bool categoryBool = true;
+    bool questionBool = false;
   
     // Perform an infinite loop getting command input from users until game ends
     while (fgets(buffer, BUFFER_LEN, stdin) != NULL)
     {
-
-      bool loop = true;
-      bool categoryBool = true;
-      bool questionBool = false;
       //input a category, if it does not exist they are pompted again until it does
       char category[100];
       char answer[100];
