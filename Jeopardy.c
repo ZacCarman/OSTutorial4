@@ -73,14 +73,13 @@ int main(int argc, char *argv[])
     bool categoryBool = true;
     bool questionBool = true;
   
-    // Perform an infinite loop getting command input from users until game ends
+    // Perform an infinite loop getting command input from users until game ends ------------------- GAME LOOP
     while (fgets(buffer, BUFFER_LEN, stdin) != NULL)
     {
       //input a category, if it does not exist they are pompted again until it does
       char category[100];
       char answer[100];
-
-      initialize_game();
+      int score;
 
       if (categoryBool == true) {
         //displays all available questions in each category 
@@ -107,6 +106,14 @@ int main(int argc, char *argv[])
         scanf(" %s", answer);
         questionBool = false;
       }
+/*
+      update_score(players, num_players, name, score);
+
+      bool valid_answer(category, value, answer);
+      bool already_answered(char *category, int value);
+
+      printf("\nNext player, please enter your response.\n");
+*/
 
       categoryBool = true;
       questionBool = true;
