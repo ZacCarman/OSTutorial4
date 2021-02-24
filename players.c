@@ -47,5 +47,7 @@ void update_score(player *players, int num_players, char *name, int score)
         (players+i)->score+=score;
 
       }
+
+      printf("\n%s: $%d", name, score);
   }
 }

@@ -68,10 +68,6 @@ int main(int argc, char *argv[])
     for(int x=0; x<CountedP;x++){
       players[x].score=0;
     }
-
-    bool loop = true;
-    bool categoryBool = true;
-    bool questionBool = true;
   
     // Perform an infinite loop getting command input from users until game ends ------------------- GAME LOOP
     while (fgets(buffer, BUFFER_LEN, stdin) != NULL)
@@ -79,13 +75,10 @@ int main(int argc, char *argv[])
       //input a category, if it does not exist they are pompted again until it does
       char category[100];
       char answer[100];
-      int score;
+      bool rightAnswer = false;
 
-      if (categoryBool == true) {
-        //displays all available questions in each category 
-        display_categories();
-        categoryBool = false;
-      }
+      //displays all available questions in each category 
+      display_categories();
 
       //ask the user to choose a category and value to display the question in that slot
       printf("\nPlease enter a category.\n");
@@ -99,25 +92,31 @@ int main(int argc, char *argv[])
       scanf(" %d", &value);        
       }
 
-      if (questionBool == true) {
-        //displays all available questions in each category 
-        display_question(category, value);
-        printf("\nPlease enter your response.\n");
-        scanf(" %s", answer);
-        questionBool = false;
+      //displays all available questions in each category 
+      display_question(category, value);
+      printf("\nPlease enter your response.\n");
+      scanf(" %s", answer);
+        
+      while(rightAnswer == false) {
+        if (valid_answer(category, value, answer) == true ) {
+          if (already_answered(category, value) == false ) {
+            int ind;
+            printf("\nPlease enter 0, 1, 2, 3 for when you put your name in.\n");
+            scanf(" %d", ind);
+            update_score(players, NUM_PLAYERS, name, players[ind].score);
+            rightAnswer = true;
+          } else {
+            printf("\nNew player, please enter your response.\n");
+            scanf(" %s", answer);
+          }
+        }
       }
-/*
-      update_score(players, num_players, name, score);
 
-      bool valid_answer(category, value, answer);
-      bool already_answered(char *category, int value);
-
-      printf("\nNext player, please enter your response.\n");
-*/
-
-      categoryBool = true;
-      questionBool = true;
-    }
+      // display names and scores at the end of a round
+      for (int x=0; x<4;x++) {
+        printf("%s : %d\n", players[x].name, players[x].score);
+      }
 
     return EXIT_SUCCESS;
+  }
 }
