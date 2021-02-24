@@ -341,7 +341,7 @@ void display_question(char *category, int value)
     int index = (value/100)-1;
 
     if (strcmp(category, "History")==0);
-    else if(strcmp(category, "2000's")==0)index += 5;
+    else if(strcmp(category, "Shows")==0)index += 5;
     else if(strcmp(category, "Generala")==0)index += 10;
     else if(strcmp(category, "Catchphrases")==0)index += 15;
     else if(strcmp(category, "Childrens")==0)index += 20;
